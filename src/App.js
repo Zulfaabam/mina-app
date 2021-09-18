@@ -1,10 +1,17 @@
-import { BrowserRouter as Router } from 'react-router-dom'
-import LaunchPage from './components/LaunchPage'
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import HomePage from './components/HomePage'
+import KonsulPage from './components/KonsulPage'
+import KritikSaranPage from './components/KritikSaranPage'
 
 function App() {
   return (
     <Router>
-      <LaunchPage />
+      <div className="App">
+        <Route exact path="/" component={HomePage} />
+        <Route path="/konsultasi" component={KonsulPage} />
+        <Route path="/kritik-saran" component={KritikSaranPage} />
+      </div>
     </Router>
   )
 }

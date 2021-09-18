@@ -17,6 +17,6 @@ body {
   );
 }
 
-/* .btn {
-  font-family: inherit;
-} */
+.bg-laki {
+  background: #117bb6;
+}
