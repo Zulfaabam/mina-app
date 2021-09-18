@@ -1,13 +1,22 @@
+@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-launch {
+  background: linear-gradient(
+    165.6deg,
+    #01adb5 -6.24%,
+    #7194ec 54%,
+    #f389bc 106.05%
+  );
 }
+
+/* .btn {
+  font-family: inherit;
+} */
