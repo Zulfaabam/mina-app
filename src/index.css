@@ -20,3 +20,11 @@ body {
 .bg-laki {
   background: #117bb6;
 }
+
+.active {
+  background: #3f3d56;
+}
+
+.textarea:focus {
+  border: 2px solid #5170be;
+}

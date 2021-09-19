@@ -10,7 +10,7 @@ export default function HomePage() {
         <p className="text-sm text-white tracking-wider mt-2 font-normal">
           LAYANAN PESAN ANONIM
         </p>
-        <div className="mt-6 space-y-2">
+        <div className="mt-6 flex flex-col gap-2">
           <Button content="Konsultasi" />
           <Button content="Kritik & Saran" />
         </div>
