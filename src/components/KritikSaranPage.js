@@ -1,10 +1,14 @@
 import React from 'react'
 import logo from '../images/mina-logo.svg'
-import Button from './Button'
+import BackButton from './BackButton'
+import NavButton from './NavButton'
 
 export default function KritikSaranPage() {
   return (
-    <div className="h-screen bg-launch py-20">
+    <div className="h-screen bg-launch py-24 relative">
+      <div className="w-max absolute top-10 left-14">
+        <BackButton />
+      </div>
       <div className="w-min mx-auto flex flex-col justify-center items-center">
         <img className="w-48" src={logo} alt="mina logo" />
         <p className="text-sm text-white tracking-wider mt-2 text-light">
@@ -18,7 +22,7 @@ export default function KritikSaranPage() {
           rows="10"
           placeholder="Tulis kritik atau saran disini..."
         ></textarea>
-        <Button content="Kirim Pesan" />
+        <NavButton content="Kirim Pesan" />
       </div>
     </div>
   )

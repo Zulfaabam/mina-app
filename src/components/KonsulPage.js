@@ -2,13 +2,15 @@ import React from 'react'
 import logo from '../images/mina-logo.svg'
 import avatarMale from '../images/avatar-male.png'
 import avatarFemale from '../images/avatar-female.png'
-import Button from './Button'
+import NavButton from './NavButton'
+import BackButton from './BackButton'
 
 export default function KonsulPage() {
   return (
-    <div className="h-screen bg-laki py-20">
+    <div className="h-screen bg-laki py-20 relative">
       <div className="w-80 mx-auto ">
-        <div className="space-y-6">
+        <BackButton />
+        <div className="space-y-6 mt-6">
           <img className="w-28" src={logo} alt="mina logo" />
           <h2 className="text-white text-sm font-bold">
             Mohon isi dengan jujur...
@@ -42,7 +44,7 @@ export default function KonsulPage() {
           </div>
         </div>
         <div className="mt-12 flex justify-center">
-          <Button content="Mulai" />
+          <NavButton content="Mulai" />
         </div>
       </div>
     </div>

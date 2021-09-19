@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../images/mina-logo.svg'
-import Button from './Button'
+import NavButton from './NavButton'
 
 export default function HomePage() {
   return (
@@ -11,8 +11,8 @@ export default function HomePage() {
           LAYANAN PESAN ANONIM
         </p>
         <div className="mt-6 flex flex-col gap-2">
-          <Button content="Konsultasi" />
-          <Button content="Kritik & Saran" />
+          <NavButton content="Konsultasi" />
+          <NavButton content="Kritik & Saran" />
         </div>
       </div>
     </div>
