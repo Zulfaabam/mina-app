@@ -7,7 +7,7 @@ import BackButton from './BackButton'
 
 export default function KonsulPage() {
   return (
-    <div className="h-screen bg-laki py-20 relative">
+    <div className="h-screen bg-blue py-20">
       <div className="w-80 mx-auto ">
         <BackButton />
         <div className="space-y-6 mt-6">

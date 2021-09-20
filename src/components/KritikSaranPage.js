@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../images/mina-logo.svg'
 import BackButton from './BackButton'
-import NavButton from './NavButton'
 
 export default function KritikSaranPage() {
+  const [messageSent, setMessageSent] = useState(false)
+
+  let pop
+
+  if (messageSent) {
+    pop = (
+      <div className="fixed inset-0 bg-black bg-opacity-60">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-min p-4 text-center rounded-xl">
+          <h1 className="mb-2 text-gray-500">Pesan terkirim</h1>
+          <button
+            className="py-2 px-10 rounded-full text-blue-500 text-sm font-bold"
+            onClick={() => setMessageSent(false)}
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="h-screen bg-launch py-24 relative">
       <div className="w-max absolute top-10 left-14">
@@ -22,8 +41,14 @@ export default function KritikSaranPage() {
           rows="10"
           placeholder="Tulis kritik atau saran disini..."
         ></textarea>
-        <NavButton content="Kirim Pesan" />
+        <button
+          className="bg-white w-48 py-2 px-10 rounded-full text-blue-500 text-sm font-bold"
+          onClick={() => setMessageSent(true)}
+        >
+          kirim pesan
+        </button>
       </div>
+      {pop}
     </div>
   )
 }
