@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from '../images/mina-logo.svg'
 import BackButton from './BackButton'
 
-export default function KritikSaranPage() {
+export default function TanyaUstadzPage() {
   const [messageSent, setMessageSent] = useState(false)
 
   let pop
@@ -33,7 +33,7 @@ export default function KritikSaranPage() {
         <p className="text-sm text-white tracking-wider mt-2 text-light">
           LAYANAN PESAN ANONIM
         </p>
-        <h1 className="text-white font-bold text-xl mt-8">Kotak Saran</h1>
+        <h1 className="text-white font-bold text-xl mt-8">Tanya Ustadz</h1>
         <textarea
           className="textarea mt-4 mb-8 p-4 rounded-xl outline-none text-sm"
           name="text"
