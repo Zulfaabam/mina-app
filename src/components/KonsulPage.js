@@ -33,7 +33,7 @@ export default function KonsulPage() {
               />
               <p className="text-white text-sm font-bold">Laki - Laki</p>
             </div>
-            <div className="w-28 p-4 text-center border rounded-lg space-y-2 hover:bg-pink-500">
+            <div className="w-28 p-4 text-center border rounded-lg space-y-2">
               <img
                 className="w-16 mx-auto"
                 src={avatarFemale}
