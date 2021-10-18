@@ -1,7 +1,8 @@
 import React from 'react'
 import logo from '../images/mina-logo.svg'
 import BackButton from './BackButton'
-import { Link } from 'react-router-dom'
+import Button from './NavButton'
+import ButtonSec from './NavButtonSec'
 
 export default function KodePage() {
   return (
@@ -25,16 +26,18 @@ export default function KodePage() {
           Kode ini sebagai penanda identitas Anda
         </p>
         <div className="mt-8 flex flex-col gap-4">
-          <Link to="/konsultasi/lanjut">
-            <button className="bg-white w-48 py-2 px-10 rounded-full text-blue-500 text-sm font-bold">
-              Lanjut
-            </button>
-          </Link>
-          <Link to="/konsultasi/lanjut">
-            <button className="bg-transparent border border-white w-48 py-2 px-8 rounded-full text-white text-xs font-bold">
-              Skip
-            </button>
-          </Link>
+          <Button
+            content="Lanjut"
+            path="/konsultasi/lanjut"
+            width="w-48"
+            paddingX="px-10"
+          />
+          <ButtonSec
+            content="Skip"
+            path="/konsultasi/lanjut"
+            width="w-48"
+            paddingX="px-8"
+          />
         </div>
       </div>
     </div>

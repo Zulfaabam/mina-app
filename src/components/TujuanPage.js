@@ -1,9 +1,10 @@
 import React from 'react'
 import BackButton from './BackButton'
 import logo from '../images/mina-logo.svg'
-import { Link } from 'react-router-dom'
 import adminKreasi from '../images/admin-kreasi.png'
 import consultant from '../images/consultant.png'
+import Button from './NavButton'
+import ButtonSec from './NavButtonSec'
 
 export default function TujuanPage() {
   return (
@@ -38,18 +39,20 @@ export default function TujuanPage() {
               </p>
             </div>
           </div>
-          <Link to="/infokonsultan">
-            <button className="bg-transparent border border-white w-48 py-2 px-2 rounded-full text-white text-xs font-bold">
-              Daftar menjadi konsultan
-            </button>
-          </Link>
+          <ButtonSec
+            content="Daftar menjadi konsultan"
+            path="/infokonsultan"
+            width="w-48"
+            paddingX="px-2"
+          />
         </div>
         <div className="mt-8 flex flex-col gap-4">
-          <Link to="/konsultasi/lanjut/lanjut2">
-            <button className="bg-white w-40 py-2 px-10 rounded-full text-blue-500 text-sm font-bold">
-              Lanjut
-            </button>
-          </Link>
+          <Button
+            content="Lanjut"
+            path="/konsultasi/lanjut/lanjut2"
+            width="w-40"
+            paddingX="px-10"
+          />
         </div>
       </div>
     </div>

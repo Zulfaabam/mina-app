@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../images/mina-logo.svg'
 import avatarMale from '../images/avatar-male.png'
 import avatarFemale from '../images/avatar-female.png'
-import NavButton from './NavButton'
+import Button from './NavButton'
 import BackButton from './BackButton'
 
 export default function KonsulPage() {
@@ -44,7 +44,7 @@ export default function KonsulPage() {
           </div>
         </div>
         <div className="mt-12 flex justify-center">
-          <NavButton content="Mulai" />
+          <Button content="Mulai" path="/chat" width="w-48" paddingX="px-10" />
         </div>
       </div>
     </div>

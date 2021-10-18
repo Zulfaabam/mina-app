@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../images/mina-logo.svg'
-import NavButton from './NavButton'
-import NavButtonSec from './NavButtonSec'
+import Button from './NavButton'
+import ButtonSec from './NavButtonSec'
 
 export default function HomePage() {
   return (
@@ -12,12 +12,31 @@ export default function HomePage() {
           LAYANAN PESAN ANONIM
         </p>
         <div className="mt-6 flex flex-col gap-3">
-          <NavButton content="Tanya Ustadz" />
-          <NavButton content="Konsultasi" />
-          <NavButton content="Kritik & Saran" />
+          <Button
+            content="Tanya Ustadz"
+            path="/tanyaustadz"
+            width="w-48"
+            paddingX="px-10"
+          />
+          <Button
+            content="Konsultasi"
+            path="/konsultasi"
+            width="w-48"
+            paddingX="px-10"
+          />
+          <Button
+            content="Kritik & Saran"
+            path="/kritiksaran"
+            width="w-48"
+            paddingX="px-10"
+          />
         </div>
         <div className="mt-20">
-          <NavButtonSec content="Login as consultant" />
+          <ButtonSec
+            content="Login as consultant"
+            width="w-48"
+            paddingX="px-8"
+          />
         </div>
       </div>
     </div>

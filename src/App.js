@@ -18,8 +18,8 @@ function App() {
           <Route exact path="/konsultasi" component={KodePage} />
           <Route exact path="/konsultasi/lanjut" component={TujuanPage} />
           <Route path="/konsultasi/lanjut/lanjut2" component={KonsulPage} />
-          <Route path="/kritik&saran" component={KritikSaranPage} />
-          <Route path="/mulai" component={ChatPage} />
+          <Route path="/kritiksaran" component={KritikSaranPage} />
+          <Route path="/chat" component={ChatPage} />
         </Switch>
       </div>
     </Router>
