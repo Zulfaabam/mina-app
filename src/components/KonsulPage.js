@@ -44,7 +44,12 @@ export default function KonsulPage() {
           </div>
         </div>
         <div className="mt-12 flex justify-center">
-          <Button content="Mulai" path="/chat" width="w-48" paddingX="px-10" />
+          <Button
+            content="Mulai"
+            path="/konsultasi/tujuan/mulai/chat"
+            width="w-48"
+            paddingX="px-10"
+          />
         </div>
       </div>
     </div>

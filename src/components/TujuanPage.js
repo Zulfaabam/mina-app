@@ -49,7 +49,7 @@ export default function TujuanPage() {
         <div className="mt-8 flex flex-col gap-4">
           <Button
             content="Lanjut"
-            path="/konsultasi/lanjut/lanjut2"
+            path="/konsultasi/tujuan/mulai"
             width="w-40"
             paddingX="px-10"
           />

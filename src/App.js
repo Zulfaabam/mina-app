@@ -16,10 +16,10 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route path="/tanyaustadz" component={TanyaUstadzPage} />
           <Route exact path="/konsultasi" component={KodePage} />
-          <Route exact path="/konsultasi/lanjut" component={TujuanPage} />
-          <Route path="/konsultasi/lanjut/lanjut2" component={KonsulPage} />
+          <Route exact path="/konsultasi/tujuan" component={TujuanPage} />
+          <Route exact path="/konsultasi/tujuan/mulai" component={KonsulPage} />
+          <Route path="/konsultasi/tujuan/mulai/chat" component={ChatPage} />
           <Route path="/kritiksaran" component={KritikSaranPage} />
-          <Route path="/chat" component={ChatPage} />
         </Switch>
       </div>
     </Router>

@@ -28,13 +28,13 @@ export default function KodePage() {
         <div className="mt-8 flex flex-col gap-4">
           <Button
             content="Lanjut"
-            path="/konsultasi/lanjut"
+            path="/konsultasi/tujuan"
             width="w-48"
             paddingX="px-10"
           />
           <ButtonSec
             content="Skip"
-            path="/konsultasi/lanjut"
+            path="/konsultasi/tujuan"
             width="w-48"
             paddingX="px-8"
           />
