@@ -6,18 +6,18 @@ import ButtonSec from './NavButtonSec'
 
 export default function KodePage() {
   return (
-    <div className="h-screen bg-launch py-40 relative">
-      <div className="w-max absolute top-10 left-14">
-        <BackButton />
-      </div>
-      <div className="w-max mx-auto flex flex-col justify-center items-center">
+    <div className="h-screen bg-launch py-40">
+      <div className="relative w-max mx-auto flex flex-col justify-center items-center">
+        <div className="w-max absolute -top-20 left-0">
+          <BackButton />
+        </div>
         <img className="w-48" src={logo} alt="mina logo" />
         <p className="text-sm text-white tracking-wider mt-2 text-light">
           LAYANAN PESAN ANONIM
         </p>
         <h1 className="text-white font-bold text-xl mt-8">Buat Kode Unik</h1>
         <input
-          className="w-60 mt-8 mb-8 px-6 py-4 rounded-xl outline-none text-sm text-center"
+          className="w-80 mt-8 mb-8 px-6 py-4 rounded-xl outline-none text-sm text-center"
           type="text"
           id="text"
           placeholder="Buat kode..."

@@ -21,10 +21,29 @@ body {
   background: #117bb6;
 }
 
+.bg-pink {
+  background: #f389bc;
+}
+
 .active {
   background: #3f3d56;
 }
 
 .textarea:focus {
   border: 2px solid #5170be;
+}
+
+[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type='radio'] + div {
+  cursor: pointer;
+}
+
+[type='radio']:checked + div {
+  background: #0000007d;
 }

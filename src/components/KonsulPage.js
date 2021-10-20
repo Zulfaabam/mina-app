@@ -7,7 +7,7 @@ import BackButton from './BackButton'
 
 export default function KonsulPage() {
   return (
-    <div className="h-screen bg-blue py-20">
+    <div className="h-screen bg-launch py-20">
       <div className="w-80 mx-auto ">
         <BackButton />
         <div className="space-y-6 mt-6">
@@ -25,22 +25,28 @@ export default function KonsulPage() {
         <div className="mt-20">
           <h2 className="text-white text-sm font-bold">Saya adalah...</h2>
           <div className="flex justify-center gap-4 mt-6">
-            <div className="w-28 p-4 text-center border rounded-lg space-y-2">
-              <img
-                className="w-16 mx-auto"
-                src={avatarMale}
-                alt="avatar male"
-              />
-              <p className="text-white text-sm font-bold">Laki - Laki</p>
-            </div>
-            <div className="w-28 p-4 text-center border rounded-lg space-y-2">
-              <img
-                className="w-16 mx-auto"
-                src={avatarFemale}
-                alt="avatar female"
-              />
-              <p className="text-white text-sm font-bold">Perempuan</p>
-            </div>
+            <label>
+              <input type="radio" name="gender" value="male" checked />
+              <div className="w-28 p-4 text-center border rounded-lg space-y-2">
+                <img
+                  className="w-16 mx-auto"
+                  src={avatarMale}
+                  alt="avatar male"
+                />
+                <p className="text-white text-sm font-bold">Laki - Laki</p>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female" />
+              <div className="w-28 p-4 text-center border rounded-lg space-y-2">
+                <img
+                  className="w-16 mx-auto"
+                  src={avatarFemale}
+                  alt="avatar female"
+                />
+                <p className="text-white text-sm font-bold">Perempuan</p>
+              </div>
+            </label>
           </div>
         </div>
         <div className="mt-12 flex justify-center">

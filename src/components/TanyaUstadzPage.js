@@ -24,18 +24,18 @@ export default function TanyaUstadzPage() {
   }
 
   return (
-    <div className="h-screen bg-launch py-24 relative">
-      <div className="w-max absolute top-10 left-14">
-        <BackButton />
-      </div>
-      <div className="w-min mx-auto flex flex-col justify-center items-center">
+    <div className="h-screen bg-launch py-28">
+      <div className="relative w-min mx-auto flex flex-col justify-center items-center">
+        <div className="w-max absolute -top-10 left-0">
+          <BackButton />
+        </div>
         <img className="w-48" src={logo} alt="mina logo" />
         <p className="text-sm text-white tracking-wider mt-2 text-light">
           LAYANAN PESAN ANONIM
         </p>
         <h1 className="text-white font-bold text-xl mt-8">Tanya Ustadz</h1>
         <textarea
-          className="textarea mt-4 mb-8 p-4 rounded-xl outline-none text-sm"
+          className="textarea w-80 mt-4 mb-8 p-4 rounded-xl outline-none text-sm"
           name="text"
           id="text"
           cols="30"
