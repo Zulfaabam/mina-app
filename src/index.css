@@ -33,6 +33,10 @@ body {
   color: #3f3d56;
 }
 
+.text-green {
+  color: #01adb5;
+}
+
 .textarea:focus {
   border: 2px solid #5170be;
 }

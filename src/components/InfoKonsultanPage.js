@@ -17,7 +17,8 @@ export default function InfoKonsultanPage() {
         </p>
         <div className="w-80 bg-white rounded-lg mt-4 p-4">
           <h1 className="text-dark font-bold text-2xl text-center">
-            Menjadi bagian dari Consulant Team
+            Menjadi bagian dari <span className="text-green">Consultant</span>{' '}
+            Team
           </h1>
           <div className="mt-6 space-y-4">
             <div className="flex items-start gap-4">
