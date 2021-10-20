@@ -34,6 +34,7 @@ export default function HomePage() {
         <div className="mt-20">
           <ButtonSec
             content="Login as consultant"
+            path="/loginkonsultan"
             width="w-48"
             paddingX="px-8"
           />

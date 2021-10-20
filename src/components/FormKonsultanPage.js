@@ -47,6 +47,7 @@ export default function FormKonsultanPage() {
                   name="namaLengkap"
                   type="text"
                   placeholder="Nama lengkap"
+                  required
                 />
 
                 <label
@@ -61,6 +62,7 @@ export default function FormKonsultanPage() {
                   name="namaPanggilan"
                   type="text"
                   placeholder="Nama panggilan"
+                  required
                 />
 
                 <label htmlFor="email" className="block font-medium mb-1">
@@ -72,6 +74,7 @@ export default function FormKonsultanPage() {
                   name="email"
                   placeholder="example@mail.com"
                   type="email"
+                  required
                 />
 
                 <label htmlFor="domisili" className="block font-medium mb-1">
@@ -83,6 +86,7 @@ export default function FormKonsultanPage() {
                   name="domisili"
                   type="text"
                   placeholder="Domisili"
+                  required
                 />
 
                 <label
@@ -97,6 +101,7 @@ export default function FormKonsultanPage() {
                   name="alamatLengkap"
                   type="text"
                   placeholder="Alamat lengkap"
+                  required
                 />
 
                 <label
@@ -111,6 +116,7 @@ export default function FormKonsultanPage() {
                   name="tanggalLahir"
                   type="date"
                   placeholder="Alamat lengkap"
+                  required
                 />
 
                 <label htmlFor="nik" className="block font-medium mb-1">
@@ -122,6 +128,7 @@ export default function FormKonsultanPage() {
                   name="nik"
                   type="number"
                   placeholder="NIK"
+                  required
                 />
 
                 <label htmlFor="hobi" className="block font-medium mb-1">
@@ -133,6 +140,7 @@ export default function FormKonsultanPage() {
                   name="hobi"
                   type="text"
                   placeholder="Hobi"
+                  required
                 />
 
                 <label
@@ -147,6 +155,7 @@ export default function FormKonsultanPage() {
                   name="alasanBergabung"
                   type="text"
                   placeholder="Alasan bergabung"
+                  required
                 />
 
                 <label htmlFor="visiMisi" className="block font-medium mb-1">
@@ -158,10 +167,23 @@ export default function FormKonsultanPage() {
                   name="visiMisi"
                   type="text"
                   placeholder="Visi & Misi"
+                  required
                 />
 
+                <label className="text-sm">
+                  <Field
+                    type="checkbox"
+                    name="toggle"
+                    className="ml-1 mr-3 transform scale-150"
+                    required
+                  />
+                  Dengan ini, <strong>saya siap menanggung beban amanah</strong>{' '}
+                  dan <strong>siap menerima konsekuensi</strong> apabila saya
+                  melakukan pelanggaran.
+                </label>
+
                 <button
-                  className="bg-green w-40 py-2 px-10 rounded-full text-white text-sm font-bold block mx-auto"
+                  className="bg-green w-40 py-2 px-10 rounded-full text-white text-sm font-bold block mx-auto mt-6"
                   type="submit"
                 >
                   Daftar

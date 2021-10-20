@@ -9,6 +9,7 @@ import TanyaUstadzPage from './components/TanyaUstadzPage'
 import ChatPage from './components/ChatPage'
 import InfoKonsultanPage from './components/InfoKonsultanPage'
 import FormKonsultanPage from './components/FormKonsultanPage'
+import LoginKonsultanPage from './components/LoginKonsultanPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/konsultasi/tujuan/mulai" component={KonsulPage} />
           <Route path="/konsultasi/tujuan/mulai/chat" component={ChatPage} />
           <Route path="/kritiksaran" component={KritikSaranPage} />
+          <Route path="/loginkonsultan" component={LoginKonsultanPage} />
           <Route exact path="/infokonsultan" component={InfoKonsultanPage} />
           <Route
             path="/infokonsultan/regkonsultan"
