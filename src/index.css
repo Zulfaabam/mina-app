@@ -17,6 +17,10 @@ body {
   );
 }
 
+.bg-green {
+  background: #01adb5;
+}
+
 .bg-blue {
   background: #117bb6;
 }
@@ -25,8 +29,8 @@ body {
   background: #f389bc;
 }
 
-.active {
-  background: #3f3d56;
+.text-dark {
+  color: #3f3d56;
 }
 
 .textarea:focus {

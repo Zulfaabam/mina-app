@@ -7,6 +7,8 @@ import KonsulPage from './components/KonsulPage'
 import KritikSaranPage from './components/KritikSaranPage'
 import TanyaUstadzPage from './components/TanyaUstadzPage'
 import ChatPage from './components/ChatPage'
+import InfoKonsultanPage from './components/InfoKonsultanPage'
+import FormKonsultanPage from './components/FormKonsultanPage'
 
 function App() {
   return (
@@ -20,6 +22,11 @@ function App() {
           <Route exact path="/konsultasi/tujuan/mulai" component={KonsulPage} />
           <Route path="/konsultasi/tujuan/mulai/chat" component={ChatPage} />
           <Route path="/kritiksaran" component={KritikSaranPage} />
+          <Route exact path="/infokonsultan" component={InfoKonsultanPage} />
+          <Route
+            path="/infokonsultan/regkonsultan"
+            component={FormKonsultanPage}
+          />
         </Switch>
       </div>
     </Router>
