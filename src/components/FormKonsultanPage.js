@@ -14,7 +14,7 @@ export default function FormKonsultanPage() {
         <p className="text-xs text-white mt-2 text-light">
           LAYANAN PESAN ANONIM
         </p>
-        <div className="w-80 bg-white rounded-lg mt-4 p-4">
+        <div className="w-80 md:w-96 bg-white rounded-lg mt-4 p-4">
           <h1 className="text-dark font-bold text-2xl text-center">
             Form Registrasi <span className="text-green">Consultant</span>
           </h1>
@@ -39,7 +39,7 @@ export default function FormKonsultanPage() {
             >
               <Form>
                 <label htmlFor="namaLengkap" className="block font-medium mb-1">
-                  Nama Lengkap
+                  Nama Lengkap: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="namaLengkap"
@@ -54,7 +54,7 @@ export default function FormKonsultanPage() {
                   htmlFor="namaPanggilan"
                   className="block font-medium mb-1"
                 >
-                  Nama Panggilan
+                  Nama Panggilan: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="namaPanggilan"
@@ -66,7 +66,7 @@ export default function FormKonsultanPage() {
                 />
 
                 <label htmlFor="email" className="block font-medium mb-1">
-                  Email
+                  Email: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="email"
@@ -78,7 +78,7 @@ export default function FormKonsultanPage() {
                 />
 
                 <label htmlFor="domisili" className="block font-medium mb-1">
-                  Domisili
+                  Domisili: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="domisili"
@@ -93,7 +93,7 @@ export default function FormKonsultanPage() {
                   htmlFor="alamatLengkap"
                   className="block font-medium mb-1"
                 >
-                  Alamat Lengkap
+                  Alamat Lengkap: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="alamatLengkap"
@@ -108,7 +108,7 @@ export default function FormKonsultanPage() {
                   htmlFor="tanggalLahir"
                   className="block font-medium mb-1"
                 >
-                  Tanggal Lahir
+                  Tanggal Lahir: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="tanggalLahir"
@@ -120,7 +120,7 @@ export default function FormKonsultanPage() {
                 />
 
                 <label htmlFor="nik" className="block font-medium mb-1">
-                  NIK
+                  NIK: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="nik"
@@ -132,7 +132,7 @@ export default function FormKonsultanPage() {
                 />
 
                 <label htmlFor="hobi" className="block font-medium mb-1">
-                  Hobi
+                  Hobi: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="hobi"
@@ -147,7 +147,7 @@ export default function FormKonsultanPage() {
                   htmlFor="alasanBergabung"
                   className="block font-medium mb-1"
                 >
-                  Alasan Bergabung
+                  Alasan Bergabung: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="alasanBergabung"
@@ -159,7 +159,7 @@ export default function FormKonsultanPage() {
                 />
 
                 <label htmlFor="visiMisi" className="block font-medium mb-1">
-                  Visi & Misi
+                  Visi & Misi: <span className="text-red-500">*</span>
                 </label>
                 <Field
                   id="visiMisi"

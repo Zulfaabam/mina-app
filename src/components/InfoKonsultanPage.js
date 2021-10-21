@@ -15,7 +15,7 @@ export default function InfoKonsultanPage() {
         <p className="text-xs text-white mt-2 text-light">
           LAYANAN PESAN ANONIM
         </p>
-        <div className="w-80 bg-white rounded-lg mt-4 p-4">
+        <div className="w-80 md:w-96 bg-white rounded-lg mt-4 p-4">
           <h1 className="text-dark font-bold text-2xl text-center">
             Menjadi bagian dari <span className="text-green">Consultant</span>{' '}
             Team
