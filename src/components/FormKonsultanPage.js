@@ -2,6 +2,8 @@ import React from 'react'
 import BackButton from './BackButton'
 import logo from '../images/mina-logo.svg'
 import { Formik, Field, Form } from 'formik'
+import InputField from './InputField'
+import EmailField from './EmailField'
 
 export default function FormKonsultanPage() {
   return (
@@ -38,136 +40,39 @@ export default function FormKonsultanPage() {
               }}
             >
               <Form>
-                <label htmlFor="namaLengkap" className="block font-medium mb-1">
-                  Nama Lengkap: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="namaLengkap"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="namaLengkap"
+                <InputField
+                  label="namaLengkap"
+                  content="Nama Lengkap"
                   type="text"
-                  placeholder="Nama lengkap"
-                  required
                 />
-
-                <label
-                  htmlFor="namaPanggilan"
-                  className="block font-medium mb-1"
-                >
-                  Nama Panggilan: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="namaPanggilan"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="namaPanggilan"
+                <InputField
+                  label="namaPanggilan"
+                  content="Nama Panggilan"
                   type="text"
-                  placeholder="Nama panggilan"
-                  required
                 />
-
-                <label htmlFor="email" className="block font-medium mb-1">
-                  Email: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="email"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="email"
-                  placeholder="example@mail.com"
-                  type="email"
-                  required
-                />
-
-                <label htmlFor="domisili" className="block font-medium mb-1">
-                  Domisili: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="domisili"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="domisili"
+                <EmailField label="email" content="Email" />
+                <InputField label="domisili" content="Domisili" type="text" />
+                <InputField
+                  label="alamatLengkap"
+                  content="Alamat Lengkap"
                   type="text"
-                  placeholder="Domisili"
-                  required
                 />
-
-                <label
-                  htmlFor="alamatLengkap"
-                  className="block font-medium mb-1"
-                >
-                  Alamat Lengkap: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="alamatLengkap"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="alamatLengkap"
-                  type="text"
-                  placeholder="Alamat lengkap"
-                  required
-                />
-
-                <label
-                  htmlFor="tanggalLahir"
-                  className="block font-medium mb-1"
-                >
-                  Tanggal Lahir: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="tanggalLahir"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="tanggalLahir"
+                <InputField
+                  label="tanggalLahir"
+                  content="Tanggal Lahir"
                   type="date"
-                  placeholder="Alamat lengkap"
-                  required
                 />
-
-                <label htmlFor="nik" className="block font-medium mb-1">
-                  NIK: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="nik"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="nik"
-                  type="number"
-                  placeholder="NIK"
-                  required
-                />
-
-                <label htmlFor="hobi" className="block font-medium mb-1">
-                  Hobi: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="hobi"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="hobi"
+                <InputField label="nik" content="NIK" type="number" />
+                <InputField label="hobi" content="Hobi" type="text" />
+                <InputField
+                  label="alasanBergabung"
+                  content="Alasan Bergabung"
                   type="text"
-                  placeholder="Hobi"
-                  required
                 />
-
-                <label
-                  htmlFor="alasanBergabung"
-                  className="block font-medium mb-1"
-                >
-                  Alasan Bergabung: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="alasanBergabung"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="alasanBergabung"
+                <InputField
+                  label="visiMisi"
+                  content="Visi & Misi"
                   type="text"
-                  placeholder="Alasan bergabung"
-                  required
-                />
-
-                <label htmlFor="visiMisi" className="block font-medium mb-1">
-                  Visi & Misi: <span className="text-red-500">*</span>
-                </label>
-                <Field
-                  id="visiMisi"
-                  className="w-full px-4 py-2 border border-green-400 rounded-lg mb-4 "
-                  name="visiMisi"
-                  type="text"
-                  placeholder="Visi & Misi"
-                  required
                 />
 
                 <label className="text-sm">

@@ -2,6 +2,7 @@ import { Formik, Field, Form } from 'formik'
 import React, { useState } from 'react'
 import logo from '../images/mina-logo.svg'
 import BackButton from './BackButton'
+import TextArea from './TextArea'
 
 export default function TanyaUstadzPage() {
   const [messageSent, setMessageSent] = useState(false)
@@ -45,20 +46,7 @@ export default function TanyaUstadzPage() {
           }}
         >
           <Form>
-            <label
-              htmlFor="textarea"
-              className="block font-medium mb-1"
-            ></label>
-            <Field
-              as="textarea"
-              id="textarea"
-              className="textarea w-80 mt-4 mb-8 p-4 rounded-xl outline-none text-sm"
-              name="textarea"
-              cols="30"
-              rows="10"
-              placeholder="Tulis pertanyaan disini..."
-              required
-            />
+            <TextArea content="Tulis pertanyaan disini..." />
 
             <button
               className="bg-white w-48 py-2 px-10 rounded-full text-blue-500 text-sm font-bold block mx-auto"

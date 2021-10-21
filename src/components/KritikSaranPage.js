@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Formik, Form, Field } from 'formik'
 import logo from '../images/mina-logo.svg'
 import BackButton from './BackButton'
+import TextArea from './TextArea'
 
 export default function KritikSaranPage() {
   const [messageSent, setMessageSent] = useState(false)
@@ -47,20 +48,7 @@ export default function KritikSaranPage() {
           }}
         >
           <Form>
-            <label
-              htmlFor="textarea"
-              className="block font-medium mb-1"
-            ></label>
-            <Field
-              as="textarea"
-              id="textarea"
-              className="textarea w-80 mt-4 mb-8 p-4 rounded-xl outline-none text-sm"
-              name="textarea"
-              cols="30"
-              rows="10"
-              placeholder="Tulis kritik atau saran disini..."
-              required
-            />
+            <TextArea content="Tulis kritik atau saran disini..." />
 
             <button
               className="bg-white w-48 py-2 px-10 rounded-full text-blue-500 text-sm font-bold block mx-auto"
