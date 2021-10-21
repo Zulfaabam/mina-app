@@ -1,4 +1,4 @@
-import { Formik, Field, Form } from 'formik'
+import { Formik, Form } from 'formik'
 import React, { useState } from 'react'
 import logo from '../images/mina-logo.svg'
 import BackButton from './BackButton'

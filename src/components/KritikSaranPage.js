@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Formik, Form, Field } from 'formik'
+import { Formik, Form } from 'formik'
 import logo from '../images/mina-logo.svg'
 import BackButton from './BackButton'
 import TextArea from './TextArea'
