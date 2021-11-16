@@ -12,7 +12,7 @@ import FormKonsultanPage from './components/FormKonsultanPage'
 import LoginKonsultanPage from './components/LoginKonsultanPage'
 
 // contoh ng kene lurr
-function ex amples(){
+function examples_axios(){
 
   const axios = require("axios").default;
 
@@ -83,6 +83,61 @@ function ex amples(){
           callbacks.unauth(err.response.status, err.response.data.message);
         }); 
   
+
+}
+
+function examples_socket(){
+
+  const Client = require("socket.io-client")
+  
+  clientSocket = new Client(`http://localhost:${port}`, {
+            auth: {
+                token: 'token'
+            }
+        })
+  
+  clientSocket.on('connect_error', (err) => {
+            //
+        })
+  
+  clientSocket.on('authenticated', (arg) => {
+           //
+        })
+  
+  
+  
+  clientSocket.on('joinedRoom', (arg) => {
+
+  
+  })
+  clientSocket.emit('joinRoom', { chatroomId })
+
+  clientSocket.on('leftRoom', (arg) => {
+      //
+  })
+  clientSocket.emit('leaveRoom', { chatroomId })
+  
+  
+  
+  
+ clientAnonym.on('newMessage', (arg) => {
+        //
+    })
+  
+  
+ clientConsultant.emit('sendMessage', { chatroomId, message: 'iamconsultant' })
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  clientSocket.close()
 
 }
 // tekan kene
