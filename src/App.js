@@ -10,6 +10,7 @@ import ChatPage from './components/ChatPage'
 import InfoKonsultanPage from './components/InfoKonsultanPage'
 import FormKonsultanPage from './components/FormKonsultanPage'
 import LoginKonsultanPage from './components/LoginKonsultanPage'
+import SelesaiMendaftarPage from './components/SelesaiMendaftarPage'
 
 // contoh ng kene lurr
 // function examples_axios(){
@@ -137,8 +138,13 @@ function App() {
           <Route path="/loginkonsultan" component={LoginKonsultanPage} />
           <Route exact path="/infokonsultan" component={InfoKonsultanPage} />
           <Route
+            exact
             path="/infokonsultan/regkonsultan"
             component={FormKonsultanPage}
+          />
+          <Route
+            path="/infokonsultan/regkonsultan/selesai"
+            component={SelesaiMendaftarPage}
           />
         </Switch>
       </div>

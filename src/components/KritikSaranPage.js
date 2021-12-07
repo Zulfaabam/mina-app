@@ -13,7 +13,7 @@ export default function KritikSaranPage() {
     pop = (
       <div className="fixed inset-0 bg-black bg-opacity-60">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-min p-4 text-center rounded-xl">
-          <h1 className="mb-2 text-gray-500">Pesan terkirim</h1>
+          <h1 className="mb-2 text-gray-500">Pesan berhasil dikirim</h1>
           <button
             className="py-2 px-10 rounded-full text-blue-500 text-sm font-bold"
             onClick={() => setMessageSent(false)}
@@ -44,7 +44,8 @@ export default function KritikSaranPage() {
           }}
           onSubmit={async (values) => {
             await new Promise((r) => setTimeout(r, 500))
-            alert(JSON.stringify(values, null, 2))
+            // alert(JSON.stringify(values, null, 2))
+            setMessageSent(true)
           }}
         >
           <Form>

@@ -1,11 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BackButton from './BackButton'
 import logo from '../images/mina-logo.svg'
 import { Formik, Field, Form } from 'formik'
 import InputField from './InputField'
 import EmailField from './EmailField'
+import { NavLink } from 'react-router-dom'
 
 export default function FormKonsultanPage() {
+  const [message, setMessage] = useState(false)
+
+  let pop
+
+  if (message) {
+    pop = (
+      <div className="fixed inset-0 bg-black bg-opacity-60">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-min p-4 text-center rounded-xl">
+          <h1 className="mb-2 text-gray-500">Anda yakin akan mendaftar?</h1>
+          <div>
+            <NavLink to="/infokonsultan/regkonsultan/selesai">
+              <button className="py-2 px-10 rounded-full text-blue-500 text-sm font-bold">
+                Ya
+              </button>
+            </NavLink>
+            <button
+              className="py-2 px-10 rounded-full text-blue-500 text-sm font-bold"
+              onClick={() => setMessage(false)}
+            >
+              Tidak
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="h-full bg-launch py-16">
       <div className="relative w-max mx-auto flex flex-col justify-center items-center">
@@ -36,7 +64,8 @@ export default function FormKonsultanPage() {
               }}
               onSubmit={async (values) => {
                 await new Promise((r) => setTimeout(r, 500))
-                alert(JSON.stringify(values, null, 2))
+                // alert(JSON.stringify(values, null, 2))
+                setMessage(true)
               }}
             >
               <Form>
@@ -71,7 +100,7 @@ export default function FormKonsultanPage() {
                 />
                 <InputField
                   label="visiMisi"
-                  content="Visi & Misi"
+                  content="Visi dan Misi"
                   type="text"
                 />
 
@@ -98,6 +127,7 @@ export default function FormKonsultanPage() {
           </div>
         </div>
       </div>
+      {pop}
     </div>
   )
 }
