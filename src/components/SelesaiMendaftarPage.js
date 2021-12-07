@@ -1,5 +1,6 @@
 import React from 'react'
 // import logo from '../images/mina-logo.svg'
+import Button from './NavButton'
 
 export default function SelesaiMendaftarPage() {
   return (
@@ -9,6 +10,14 @@ export default function SelesaiMendaftarPage() {
         <p className="text-sm text-white tracking-wider mt-2 font-normal">
           Pendaftaran selesai.
         </p>
+        <div className="mt-4">
+          <Button
+            path="/"
+            content="Kembali ke Homepage"
+            width="w-48"
+            paddingX="px-2"
+          />
+        </div>
       </div>
     </div>
   )
