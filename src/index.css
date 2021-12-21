@@ -1,7 +1,28 @@
-@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
+.textarea:focus {
+  border: 2px solid #5170be;
+}
+
+[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type='radio'] + div {
+  cursor: pointer;
+}
+
+[type='radio']:checked + div {
+  background: #0000007d;
+}
+
+/* body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,23 +56,4 @@ body {
 
 .text-green {
   color: #01adb5;
-}
-
-.textarea:focus {
-  border: 2px solid #5170be;
-}
-
-[type='radio'] {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-[type='radio'] + div {
-  cursor: pointer;
-}
-
-[type='radio']:checked + div {
-  background: #0000007d;
-}
+}*/

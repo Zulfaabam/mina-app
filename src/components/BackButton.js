@@ -1,13 +1,16 @@
 import React from 'react'
-import arrow from '../images/arrow-back.svg'
-import { useHistory } from 'react-router-dom'
+import { HiArrowLeft } from 'react-icons/hi'
+import { useNavigate } from 'react-router-dom'
 
 export default function BackButton() {
-  let history = useHistory()
+  let navigate = useNavigate()
 
   return (
-    <div className="w-max cursor-pointer" onClick={() => history.goBack()}>
-      <img className="w-6" src={arrow} alt="arrow back" />
+    <div
+      className="w-max text-white cursor-pointer"
+      onClick={() => navigate(-1)}
+    >
+      <HiArrowLeft className="text-lg" />
     </div>
   )
 }
