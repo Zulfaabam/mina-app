@@ -2,7 +2,7 @@ import React from 'react'
 import BackButton from '../components/BackButton'
 import logo from '../images/mina-logo.svg'
 import ButtonTer from '../components/NavButtonTer'
-import questionMark from '../images/question-mark.png'
+import { AiFillQuestionCircle } from 'react-icons/ai'
 
 export default function InfoKonsultanPage() {
   return (
@@ -22,7 +22,9 @@ export default function InfoKonsultanPage() {
           </h1>
           <div className="mt-6 space-y-4">
             <div className="flex items-start gap-4">
-              <img src={questionMark} alt="question mark" />
+              <div>
+                <AiFillQuestionCircle size="2rem" color="#01adb5" />
+              </div>
               <div>
                 <h2 className="text-dark font-bold text-lg mb-1">
                   Apa itu Consultant Team?
@@ -35,7 +37,9 @@ export default function InfoKonsultanPage() {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <img src={questionMark} alt="question mark" />
+              <div>
+                <AiFillQuestionCircle size="2rem" color="#01adb5" />
+              </div>
               <div>
                 <h2 className="text-dark font-bold text-lg mb-1">
                   Apa benefit saat berkontribusi menjadi seorang Consultant?
@@ -48,7 +52,9 @@ export default function InfoKonsultanPage() {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <img src={questionMark} alt="question mark" />
+              <div>
+                <AiFillQuestionCircle size="2rem" color="#01adb5" />
+              </div>
               <div>
                 <h2 className="text-dark font-bold text-lg mb-1">
                   Siapa yang dapat menjadi bagian dari tim Consultant?
