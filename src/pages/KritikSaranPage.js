@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Formik, Form } from 'formik'
 import logo from '../images/mina-logo.svg'
-import BackButton from './BackButton'
-import TextArea from './TextArea'
+import BackButton from '../components/BackButton'
+import TextArea from '../components/TextArea'
 
 export default function KritikSaranPage() {
   const [messageSent, setMessageSent] = useState(false)

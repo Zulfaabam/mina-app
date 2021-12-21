@@ -1,10 +1,10 @@
 import React from 'react'
-import BackButton from './BackButton'
+import BackButton from '../components/BackButton'
 import logo from '../images/mina-logo.svg'
 import adminKreasi from '../images/admin-kreasi.png'
 import consultant from '../images/consultant.png'
-import Button from './NavButton'
-import ButtonSec from './NavButtonSec'
+import Button from '../components/NavButton'
+import ButtonSec from '../components/NavButtonSec'
 
 export default function TujuanPage() {
   return (

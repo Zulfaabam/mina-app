@@ -2,8 +2,8 @@ import React from 'react'
 import logo from '../images/mina-logo.svg'
 import avatar from '../images/avatar-male.png'
 import airplane from '../images/airplane.svg'
-import BackButton from './BackButton'
-import ChatBubble from './ChatBubble'
+import BackButton from '../components/BackButton'
+import ChatBubble from '../components/ChatBubble'
 
 export default function ChatPage() {
   return (

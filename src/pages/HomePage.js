@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../images/mina-logo.svg'
-import Button from './NavButton'
-import ButtonSec from './NavButtonSec'
+import Button from '../components/NavButton'
+import ButtonSec from '../components/NavButtonSec'
 
 export default function HomePage() {
   return (

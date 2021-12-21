@@ -1,6 +1,6 @@
 import React from 'react'
 // import logo from '../images/mina-logo.svg'
-import Button from './NavButton'
+import Button from '../components/NavButton'
 
 export default function SelesaiMendaftarPage() {
   return (

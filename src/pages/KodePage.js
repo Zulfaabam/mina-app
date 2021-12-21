@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from '../images/mina-logo.svg'
-import BackButton from './BackButton'
-import Button from './NavButton'
-import ButtonSec from './NavButtonSec'
+import BackButton from '../components/BackButton'
+import Button from '../components/NavButton'
+import ButtonSec from '../components/NavButtonSec'
 
 export default function KodePage() {
   return (

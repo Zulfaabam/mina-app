@@ -1,8 +1,8 @@
 import { Formik, Form } from 'formik'
 import React, { useState } from 'react'
 import logo from '../images/mina-logo.svg'
-import BackButton from './BackButton'
-import TextArea from './TextArea'
+import BackButton from '../components/BackButton'
+import TextArea from '../components/TextArea'
 
 export default function TanyaUstadzPage() {
   const [messageSent, setMessageSent] = useState(false)

@@ -1,7 +1,7 @@
 import React from 'react'
-import BackButton from './BackButton'
+import BackButton from '../components/BackButton'
 import logo from '../images/mina-logo.svg'
-import ButtonTer from './NavButtonTer'
+import ButtonTer from '../components/NavButtonTer'
 import questionMark from '../images/question-mark.png'
 
 export default function InfoKonsultanPage() {

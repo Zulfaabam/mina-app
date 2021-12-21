@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import BackButton from './BackButton'
+import BackButton from '../components/BackButton'
 import logo from '../images/mina-logo.svg'
 import { Formik, Field, Form } from 'formik'
-import InputField from './InputField'
-import EmailField from './EmailField'
+import InputField from '../components/InputField'
+import EmailField from '../components/EmailField'
 import { NavLink } from 'react-router-dom'
 
 export default function FormKonsultanPage() {

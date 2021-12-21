@@ -2,8 +2,8 @@ import React from 'react'
 import logo from '../images/mina-logo.svg'
 import avatarMale from '../images/avatar-male.png'
 import avatarFemale from '../images/avatar-female.png'
-import Button from './NavButton'
-import BackButton from './BackButton'
+import Button from '../components/NavButton'
+import BackButton from '../components/BackButton'
 
 export default function KonsulPage() {
   return (
